@@ -345,3 +345,23 @@ code {
 .site-footer p {
   margin: 4px 0;
 }
+
+/* ----------------------------------------------------------
+   Interaction states
+   ---------------------------------------------------------- */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px;
+}
+
+.nav-links a.is-active {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
