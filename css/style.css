@@ -1,0 +1,31 @@
+/* ==========================================================
+   Harshita Joshi - Personal Portfolio
+   Base reset and design tokens
+   ========================================================== */
+
+:root {
+  --bg: #fbfaf8;
+  --surface: #ffffff;
+  --text: #1b1b1f;
+  --muted: #5d5d68;
+  --border: #e5e2dc;
+  --accent: #8a1538;
+  --accent-soft: #f6e9ed;
+  --radius: 12px;
+  --maxw: 880px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
