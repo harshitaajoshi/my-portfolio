@@ -190,6 +190,39 @@
         </article>
 
       </div>
+
+      <h3 class="subhead">Open-Source Contributions</h3>
+      <div class="project-list">
+
+        <article class="project-card">
+          <h3>Apache Polaris</h3>
+          <p class="project-meta">Contributor &middot; Java, Apache Iceberg</p>
+          <p>
+            Eliminated redundant per-request AWS STS calls in SigV4 federation with a
+            realm-scoped credential cache, hardened concurrent catalog writes with
+            automatic retry-on-conflict for Iceberg table notification updates, and
+            redesigned error handling across the PolarisException hierarchy so each
+            exception owns its own HTTP status code. Also uncovered race conditions in
+            catalog commits, including HTTP 500s from writes racing table drops on the
+            NoSQL backend.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h3>codebase-memory-mcp</h3>
+          <p class="project-meta">Contributor &middot; C, SQLite, Cypher &middot; 47k+ stars</p>
+          <p>
+            Shipped 6 merged pull requests (~1.2k lines of C) to an MCP server powering
+            persistent code knowledge graphs for AI coding agents. Extended the Cypher
+            graph query engine with property-to-property comparisons and
+            multi-argument functions such as <code>coalesce()</code>, restored accurate
+            BM25 search by pre-filtering labels in FTS5 (ranking verified on 75/75
+            benchmark queries), and hardened multi-language code extraction to remove
+            false dependency edges, UTF-8 docstring corruption, and node collisions.
+          </p>
+        </article>
+
+      </div>
     </section>
 
   <!-- MORE SECTIONS -->
