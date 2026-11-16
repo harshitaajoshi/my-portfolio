@@ -171,3 +171,38 @@ a {
   background: transparent;
   color: var(--accent);
 }
+
+/* ----------------------------------------------------------
+   About
+   ---------------------------------------------------------- */
+
+.section-note {
+  margin: 0 0 20px;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+section p {
+  max-width: 68ch;
+}
+
+.subhead {
+  font-size: 1rem;
+  margin: 32px 0 12px;
+  letter-spacing: -0.01em;
+}
+
+.facts {
+  margin: 0;
+  padding-left: 20px;
+  color: var(--muted);
+  max-width: 68ch;
+}
+
+.facts li {
+  margin-bottom: 12px;
+}
+
+.facts strong {
+  color: var(--text);
+}
