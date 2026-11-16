@@ -345,3 +345,66 @@ code {
 .site-footer p {
   margin: 4px 0;
 }
+
+/* ----------------------------------------------------------
+   Interaction states
+   ---------------------------------------------------------- */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px;
+}
+
+.nav-links a.is-active {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ----------------------------------------------------------
+   Responsive adjustments
+   ---------------------------------------------------------- */
+
+@media (max-width: 620px) {
+  .nav {
+    padding: 12px 18px;
+    gap: 8px 16px;
+  }
+
+  .nav-links {
+    gap: 14px;
+    font-size: 0.85rem;
+  }
+
+  main {
+    padding: 0 18px 56px;
+  }
+
+  section {
+    padding: 40px 0;
+  }
+
+  .hero {
+    padding-top: 48px;
+  }
+
+  .project-card {
+    padding: 18px 20px;
+  }
+
+  .contact-list li {
+    flex-direction: column;
+    gap: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
